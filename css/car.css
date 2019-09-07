@@ -1,0 +1,48 @@
+@charset "utf-8";
+.margincar{width:990px;margin:0 auto;}
+#car .car-top{height: 120px;}
+#car .car-top .carlogo{float: left;margin-top: 25px;}
+#car .car-top .carbz{float: right;margin-top: 30px;}
+/* #car .car-content{} */
+#car .car-content .car-content-t{height: 35px;}
+#car .carr-content .car-content-t .mycar{font: 400 16px/35px "Microsoft YaHei"; float: left;}
+#car .car-content .car-content-t .myland{line-height: 35px; float: right;color: #666;}
+#car .car-content .car-content-t .myland a img{margin: 0px 2px;}
+/* #car .car-content .car-content-m{} */
+#car .car-content .car-content-m .car-content-m-t{width: 100%;margin: 50px 0px -3px;background-color: #FF9000;height:36px;}
+#car .car-content .car-content-m .car-content-m-t p{float: left;font-size: 14px;color: #FFF;font-weight: 700;line-height: 36px;
+    padding: 0px 10px;}
+#car .car-content .car-content-m .car-content-m-t em{line-height: 36px;margin-left: 10px;color: #FFF;}
+#car .car-content .car-content-m .car-content-m-c{margin: 3px 0px 0px;}
+#car .car-content .car-content-m .car-content-m-c .titlelist{height: 40px;background-color: #FAFBF8;
+    border-top: 1px solid #EDECEC; border-bottom: 1px solid #EDECEC; font: 400 12px/40px "宋体";}
+#car .car-content .car-content-m .car-content-m-c .titlelist input{float: left;margin: 13px 27px 0px 35px;}
+#car .car-content .car-content-m .car-content-m-c .titlelist p{float: left;}
+#car .car-content .car-content-m .car-content-m-c ul{}
+#car .car-content .car-content-m .car-content-m-c ul li{border-bottom: 1px dotted #E1E1E1;padding: 20px 0px;
+    float: left;width: 990px;}
+#car .car-content .car-content-m .car-content-m-c ul li input{float: left;margin: 22px 0px 0px 35px;}
+#car .car-content .car-content-m .car-content-m-c ul li .img{float: left;width: 75px;}
+#car .car-content .car-content-m .car-content-m-c ul li .img a img{width: 60px;height: 60px;}
+#car .car-content .car-content-m .car-content-m-c ul li .name{margin: 0px 40px 0px 0px;width: 350px;float: left;}
+#car .car-content .car-content-m .car-content-m-c ul li .name a{display: block;overflow: hidden;line-height: 22px;height: 44px;}
+#car .car-content .car-content-m .car-content-m-c ul li .price{font: 400 18px/22px "Microsoft YaHei";
+    float: left;width: 115px;}
+#car .car-content .car-content-m .car-content-m-c ul li .num{float: left;margin: 0px 0px 0px 5px;width: 84px;}
+#car .car-content .car-content-m .car-content-m-c ul li .num input{width:45px;}
+#car .car-content .car-content-m .car-content-m-c ul li .allpri{float: left;width: 115px;margin-left: 30px;
+    font: 400 20px/22px "Microsoft YaHei";color: #FF9000;}
+#car .car-content .car-content-m .car-content-m-c ul li .caozuo{width: 80px;float: right;line-height: 22px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

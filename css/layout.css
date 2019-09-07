@@ -1,0 +1,118 @@
+@charset "utf-8";
+.margin{width:1200px;margin:0 auto;}
+.layout-t{color: #959595;line-height: 40px;}
+#layout .goods{height:574px;}
+#layout .goods .goods-xx{width: 596px;float: left;height:547px;}
+#layout .goods .goods-xx .goods-xx-t{width: 596px;height:502px;}
+#layout .goods .goods-xx .goods-xx-t dl{width: 84px;float: left;}
+#layout .goods .goods-xx .goods-xx-t dl dt a{width: 82px;height: 15px;float: left;text-align: center;border: 1px solid #C9C9C9;}
+#layout .goods .goods-xx .goods-xx-t dl dt a.up{background: url(../img/css7.png) no-repeat 33px 5px ;}
+#layout .goods .goods-xx .goods-xx-t dl dt a.down{background: url(../img/css7.png) no-repeat 33px -21px ;}
+#layout .goods .goods-xx .goods-xx-t dl dd{width: 84px;float: left;margin-top: 8px;height: 460px;overflow: hidden;}
+#layout .goods .goods-xx .goods-xx-t dl dd a{border: 1px solid #8AB800;display: block;width:82px;height:82px;}
+#layout .goods .goods-xx .goods-xx-r{float: right;width: 500px;height: 500px;border: 1px solid #C9C9C9;overflow: hidden;
+    margin-top: 0px;}
+#layout .goods .goods-xx .goods-xx-b{color: #535353;height:45px;}
+#layout .goods .goods-xx .goods-xx-b .num{float: left;width: 270px;line-height: 45px;color: #535353;}
+#layout .goods .goods-xx .goods-xx-b .shar{float: left;width: 87px;margin: 6px 0 0 160px;background-color: #FFF;}
+#layout .goods .goods-xx .goods-xx-b .shar dl{position: relative;}
+#layout .goods .goods-xx .goods-xx-b .shar dl dt{height: 30px;border-top: 1px solid #FFF;border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;line-height: 30px;background: url("../img/jiantb.png") no-repeat 69px 12px;}
+#layout .goods .goods-xx .goods-xx-b .shar dl dt s{background: url("../img/css8.gif") no-repeat  0px -100px;
+    width: 16px;height: 16px;float: left;margin: 7px 5px 0px 6px;display: block;}
+#layout .goods .goods-xx .goods-xx-b .shar dl dd{position: absolute;top: 31px;left: 0px;background-color: #FFF;
+    border-bottom: 1px solid #E5E5E5;border-left: 1px solid #E5E5E5;border-right: 1px solid #E5E5E5;
+    width: 85px;padding: 3px 0px 10px;display: none;}
+
+#layout .goods .goods-xx .goods-xx-b .shar dl:hover dd{display:block;}  
+#layout .goods .goods-xx .goods-xx-b .shar dl:hover dt{border-top: 1px solid #E5E5E5;border-left: 1px solid #E5E5E5;border-right: 1px solid #E5E5E5;}
+#layout .goods .goods-xx .goods-xx-b .shar dl dd a{margin-left: 7px;}
+#layout .goods .goods-xx .goods-xx-b .shar dl dd a img{font-size: 12px;vertical-align: middle;}
+#layout .goods .goods-xx .goods-xx-b .shouc{float: right;margin: 0px 10px 0px 15px;height:45px;}
+#layout .goods .goods-xx .goods-xx-b .shouc a{background: url("../img/css8.gif") no-repeat 0px -154px;line-height: 45px;
+    color: #535353;padding-left: 20px; display: block;font:12px/45px "";}
+
+#layout .goods .info{float: right;width: 570px;}
+#layout .goods .info .goodsname{width: 570px;height: auto;min-height: 68px;border-bottom: 1px solid #E0E0E0;}
+#layout .goods .info .goodsname h1{font: 800 18px/34px "Microsoft YaHei";color: #4C4C4C;}
+#layout .goods .info .sales{width: 570px;border-bottom: 1px solid #E0E0E0;padding: 18px 0px;}
+#layout .goods .info .sales .sales-t{width: 570px;margin: 0px 0px 18px;height:30px;}
+#layout .goods .info .sales .sales-t p:nth-child(1){float:left;color: #FFF;font-size: 14px;background-color: #FF6900;line-height: 26px;padding: 0px 8px;margin-right: 10px;}
+#layout .goods .info .sales .sales-t p:nth-child(2){float:left;font: 800 26px/26px "Microsoft YaHei";color: #FF6900;}
+#layout .goods .info .sales .sales-t p:nth-child(2) span{font: 800 16px/26px "Microsoft YaHei";color: #4C4C4C;
+    margin-left: 10px;text-decoration: line-through;}
+#layout .goods .info .sales .sales-t p:nth-child(3){float:left;margin: 3px 0px 0px 20px;}
+#layout .goods .info .sales .sales-t p:nth-child(3) a{background: url(../img/css8.gif) no-repeat 10px -63px;border: 1px solid #E7E7E7;
+    line-height: 18px;color: #4c4c4c;padding: 0px 10px 0px 25px;display: block;}
+#layout .goods .info .sales .sales-c{height: 26px;}
+#layout .goods .info .sales .sales-c dl{float: left;width: 125px;height: 26px;position: relative;z-index: 10;}
+#layout .goods .info .sales .sales-c dl dt{font-family: "宋体","Arial Narrow",HELVETICA;font-size: 12px;
+    color: #333;padding: 0px;margin: 0px;}
+#layout .goods .info .sales .sales-c dl dt a{float: left;width: 97px;height: 26px;background: url(../img/layoutp.png) no-repeat #FF6900;
+    font-size: 14px;color: #FFF;padding-left: 28px; line-height: 26px;}
+#layout .goods .info .sales .sales-c dl:hover dd{display:block;}   
+#layout .goods .info .sales .sales-c dl dd{position: absolute;z-index: 20;left: 0px;top: 26px;width: 220px;
+    background-color: #FFF;border: 1px solid #DDD;text-align: center;padding-bottom: 10px;display: none;}
+#layout .goods .info .sales .sales-b{margin-top: 10px;width: 570px;}
+#layout .goods .info .sales .sales-b p{color: #4C4C4C;line-height: 16px;}
+#layout .goods .info .sales .sales-b p span{border: 1px solid #8AB700;color: #8AB700;line-height: 14px;
+    width: 48px;text-align: center;font-size: 12px;display: inline-block;margin-right: 10px;}
+#layout .goods .info .buy{width: 570px;margin-bottom: 20px;margin-top:20px;height:62px;}
+#layout .goods .info .buy dl{float: left;width: 570px;height: 52px;}
+#layout .goods .info .buy dl dt{width: 75px;float: left;margin-right: 15px;}
+#layout .goods .info .buy dl dt input{border: 1px solid #CDCDCD;width: 54px;height: 48px;
+    font: 400 24px/48px "Microsoft YaHei";color: #626262;text-align: center;float: left;}
+#layout .goods .info .buy dl dd .addcar{float: left;margin-right: 15px;}
+#layout .goods .info .buy dl dd .addcar a{width: 182px;height: 52px;display: block;
+    background: url(../img/css9.gif) no-repeat scroll 0% 0% transparent;}
+#layout .goods .info .peisong{width: 570px;padding-bottom: 25px;}
+#layout .goods .info .peisong dl{float: left;margin-right: 10px;position: relative;z-index: 0;}
+#layout .goods .info .peisong dl dt{background-color: #91C103;border: 1px solid #91C103;float: left;
+    color: #FFF;line-height: 23px;padding-right: 3px;}
+#layout .goods .info .peisong dl dt img{width:25px;height:23px;float: left;margin-right: 5px;vertical-align: middle;} 
+#layout .goods .info .peisong dl dd{line-height: 18px;border: 1px solid #F1E1D3;background-color: #FFF5EC;
+    color: #616261;padding: 0px 8px;z-index: 79;margin-top: 10px;position: absolute;top: 25px;left: 0px;
+    width: 378px;display: none;}
+#layout .goods .info .peisong dl dd s{position: absolute;top: -5px;left: 14px;width: 8px;height: 5px;
+    display: block;background: url("../img/css7.png") no-repeat  0px -97px ;}   
+#layout .goods .info .peisong dl.now:hover dd{display: block;}
+#layout .goodsShow{float: right;}
+#layout .goodsShow .goodsnav{width: 980px;position: relative;z-index: 70;background-color: #FAFAFA;border-width: 2px 1px 1px;
+    border-style: solid;border-color: #8AB700 #EFEFE7 #EFEFE7;height: 41px;}
+/* #layout .goodsShow .goodsnav dl{} */
+#layout .goodsShow .goodsnav dl dt{float: left;width: 672px;}
+#layout .goodsShow .goodsnav dl dt em{float: left;position: relative;z-index: 70;height: 34px;width: 112px;}
+#layout .goodsShow .goodsnav dl dt em a{font-size: 14px;padding-top: 5px;color: #79A000;line-height: 34px;padding: 10px 4px 0px 0px;
+    position: absolute;top: -6px;left: -1px;width: 108px;text-align: center;height: 34px;
+}
+#layout .goodsShow .goodsnav dl dt em a.on{display:block;background: url("../img/css7.png") no-repeat  right -194px;
+    color: #FFF;}
+#layout .goodsShow .goodsnav dl dd{float: right;margin: 7px 13px 0px 0px;}
+#layout .goodsShow .goodsnav dl dd span{display:block;float: left;margin-right: 25px;
+    font: 800 18px/30px "Microsoft YaHei";color: #FF6900;}
+#layout .goodsShow .goodsnav dl dd a{display: block;float: left;height: 30px;width: 122px;width: 122px;
+    height: 30px;display: block;background:url("../img/css9.gif") no-repeat;background-position:0px -212px; }
+#layout .goodsShow .goodsxiangq{float: left;width: 980px;margin: 20px 0px;}
+/* #layout .goodsShow .goodsxiangq dl{} */
+#layout .goodsShow .goodsxiangq dl dt{width: 980px;margin-bottom: 15px;}
+#layout .goodsShow .goodsxiangq dl dt img{display: inline;}
+#layout .goodsShow .goodsxiangq dl dd{width: 980px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
