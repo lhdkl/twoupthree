@@ -9,17 +9,18 @@
 #list .listmx .listmx-t ul li:hover a{color:red;}
 
 #list .listcon{width: 970px;float: right}
-#list .listcon ul li{width: 242px;float: left;height: 395px;box-sizing: border-box;}
-#list .listcon ul li .smallb{border: 4px solid #FFF;width: 211px;height: 386px;padding: 0px 11px;
+#list .listcon ul{position: relative;width: 970px;}
+#list .listcon ul li{width: 241px;float: left;height: 394px;box-sizing: border-box;}
+#list .listcon ul li .smallb{width: 211px;height: 386px;padding: 0px 11px;border: 1px solid #EEE;
     position: relative;transition: all 0.2s linear 0s;}
 #list .listcon ul li .smallb p:nth-child(1){margin-top: 10px;width: 211px;text-align: center;} 
 #list .listcon ul li .smallb p:nth-child(1) a img{width: 201px;height: 201px;}
-#list .listcon ul li .smallb p.tip{height: 72px;width: 211px;text-overflow: clip;display: block;overflow: hidden;
+#list .listcon ul li .smallb p.tip{height: 38px;width: 140px;text-overflow: clip;display: block;overflow: hidden;
     margin-top: 5px;}
 #list .listcon ul li .smallb p.tip a{font: 400 14px/24px "Microsoft YaHei";color: #1B1B15;}
-#list .listcon ul li .smallb p.tip a font{max-height: 48px;text-overflow: clip;display: block;overflow: hidden;font-size: 14px;}
-#list .listcon ul li .smallb p.tip a font span{font: 400 14px/24px "Microsoft YaHei";color: #929292;
-    text-overflow: clip;display: block;overflow: hidden;height: 24px;}
+#list .listcon ul li .smallb p.tip a font{max-height: 48px;display: block;width:140px;white-space:nowrap; overflow: hidden;text-overflow:ellipsis;}
+#list .listcon ul li .smallb p.tip a span{font: 400 14px/24px "Microsoft YaHei";color: #929292;width:140px;
+    white-space:nowrap; overflow: hidden;text-overflow:ellipsis;display: block;height: 24px;}
 #list .listcon ul li .smallb p.tip a:hover{color:red;}  
 #list .listcon ul li .smallb p.price{font: 400 20px/25px "Microsoft YaHei";color: #FF6900;margin-top: 5px;
     transition: all 0.2s linear 0s;} 
@@ -33,7 +34,7 @@
 #list .listcon ul li .smallb p.btn a{background: url(../img/css6.png) no-repeat 0% 0%;width: 233px;
     height: 32px;display: block;}
 #list .listcon ul li:hover p.btn {display: block;top: 358px;}
-/* #list .listcon ul li:hover li{border:2px solid #666;}  */
+#list .listcon ul li:hover li{border:2px solid #666;} 
 
 
 
