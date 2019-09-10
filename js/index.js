@@ -4,14 +4,43 @@
         constructor(){
             this.Obox=document.querySelector(".main-t-fenlei dl dd .box");
             this.Oul=document.querySelector(".main-t-fenlei dl dd .box ul");
+            this.nologin=document.querySelector(".header-top .header-top-l");
+            this.login=document.querySelector(".header-top .header-top-login")
+            this.em=document.querySelector(".header-top .header-top-login .f1 em");
+            this.dp=document.querySelector(".header-top .header-top-login dd p");
+            this.of2=document.querySelector(".header-top .header-top-login dd .f2");
+            console.log(this.em)
+            console.log(this.login)
             // console.log(this.Obox);
             // console.log(this.Oul);
             this.listul=document.querySelector("#nav .margin .nav-l .shuig ul")
             this.url="http://localhost/twoupthree/json/goods.json";
-            this.listurl="http://localhost/twoupthree/json/item.json"
+            this.listurl="http://localhost/twoupthree/json/item.json";
+            this.getLocal();
+            this.logins();
             this.listload();
             this.onload();
             this.addEvent();
+        }
+        getLocal(){
+            this.account= JSON.parse(localStorage.getItem("account")) || [];
+            console.log(this.account);
+            
+        }
+        logins(){
+           this.i=0;
+           var on=this.account.some((val,index)=>{
+                this.i=index;
+                return val.onoff==1;
+           })
+           if(on){
+            this.nologin.style.display="none";
+            this.login.style.display="block";
+            this.em.innerHTML=this.account[this.i].username;
+            this.dp.innerHTML=this.account[this.i].username;
+           }
+
+
         }
         addEvent(){
             var that=this;
@@ -31,6 +60,14 @@
                 }
                 
             })
+            that.of2.onclick=function(){
+                that.account[that.i].onoff = 0;
+                localStorage.setItem("account",JSON.stringify(this.account));
+                that.nologin.style.display="block";
+                that.login.style.display="none";
+                that.em.innerHTML="";
+                that.dp.innerHTML=""; 
+            }
 
         }
         layoutSetLoca(){

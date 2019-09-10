@@ -31,26 +31,31 @@
             this.account = localStorage.getItem("account") ? JSON.parse(localStorage.getItem("account")) : [];
                 that.username = that.oTIn.value;
                 that.password = that.opaIn.value;
-                var onoff = false;//定义一个开关变量
+                var on= false;//定义一个开关变量
                 var index = 0 ; //定义一个下标确定用户
                 //遍历数组进行匹配
                 for(var i =0;i<that.account.length;i++){
                     if(that.username==that.account[i].username){//有这个账号
-                        isHad=true;
+                        on=true;
                         index=i;
                         }
                     }
-                    if(onoff){//如果存在
+                    if(on){//如果存在
                             if(that.password==that.account[index].password){
-                                that.Osua.href="index.html";
+                                that.account[index].onoff=1;
+                                // console.log( that.account[index].onoff)
+                               location.href="index.html";
                             }else{
                                 alert("密码错误");
                              }
                     }else{//账号不存在或输入错误
                         alert('账号不存在或输入错误');
-                    }
+                      }
+                 localStorage.setItem("account",JSON.stringify(that.account));
+                
         }
 
+       
 
    }
 new Land();

@@ -43,6 +43,8 @@
                             <div class="exzoom_img_box" >
                                 <ul class='exzoom_img_ul'>
                                     <li><img src="${this.res[i].img}"/></li>
+                                    <li><img src="${this.res[i].img}"/></li>
+                                    <li><img src="${this.res[i].img}"/></li>
                                 </ul>
                             </div>
                             <!--缩略图导航-->

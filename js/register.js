@@ -104,10 +104,12 @@
         }
         }
         //创建对象
-       this.obj = {username:this.username,password:this.password}
+       this.obj = {username:this.username,password:this.password,onoff:0}
        this.account.push(this.obj);
+        // location.href="index.html";
+
        localStorage.setItem("account",JSON.stringify(this.account))
-        this.suba.href="index.html"
+        // this.suba.href="index.html"
       } 
       
     }
