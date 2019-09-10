@@ -174,7 +174,7 @@
                         <div class="smallb">
                             <p class="simg"> 
                                 <a  href="layout.html">
-                                    <img src="${res[i].imga}" class="img">
+                                    <img src="${res[i].img}" class="img">
                                 </a>
                             </p>
                             <P class="tip">
