@@ -11,13 +11,53 @@
             this.listurl="http://localhost/twoupthree/json/item.json"
             this.listload();
             this.onload();
+            this.addEvent();
+        }
+        addEvent(){
+            var that=this;
+            console.log(1)
+            this.Obox.addEventListener("click",function(eve){
+                var e=eve || window.event;
+                var target = e.target || e.srcElement;
+                if(target.className=="btn"){
+                    that.id=target.parentNode.parentNode.getAttribute("index");
+                    console.log(that.id)
+                    that.setLocal();
+                }
+                
+            })
+
+        }
+        setLocal(){
+            console.log(this.id);
+            // 把数据存在数组中，先读本地缓存，看看里面有没有数据，判断第一次读还是不是第一次读
+            this.cargo=JSON.parse(localStorage.getItem("cargo")) || [];
+            if(this.cargo.length<1){
+                this.cargo.push({
+                    id:this.id,
+                    num:1
+                })
+            }else{
+                var onoff=true;
+                for(var i=0;i<this.cargo.length;i++){
+                    if(this.cargo[i].id==this.id){
+                        this.cargo[i].num++
+                        onoff=false;
+                    }
+                }
+                if(onoff){
+                    this.cargo.push({id:this.id,num:1})
+                }
+            }
+            // console.log(this.cargo)
+            localStorage.setItem("cargo",JSON.stringify(this.cargo))
         }
         listload(){
             var that=this;
             ajax({
                 url:this.listurl,
                 success:function(res){
-                    console.log(res);
+                    // console.log(res);
                     that.res=JSON.parse(res);
                     that.listdisplay();
                 }
@@ -62,7 +102,7 @@
                     </li>`
             // }
             this.listul.innerHTML=str
-            console.log(str)
+            // console.log(str)
         }
         onload(){
             var that=this;
@@ -79,7 +119,7 @@
             var str="";
             var res=this.res;
             for(var i=0;i<res.length;i++){
-                str+=`<li>
+                str+=`<li index="${res[i].goodsId}">
                 <div class="smallb">
                     <p> 
                         <a href="../html/layout.html">
@@ -91,11 +131,12 @@
                         ￥${res[i].price}
                         <span>￥${res[i].oldprice}</span>
                     </p>
-                    <p class="btn"><a href="#"></a></p>
+                    <p class="btn"></p>
                 </div>
             </li>`
             }
             this.Oul.innerHTML=str;
+            // console.log(str)
         }
 
 

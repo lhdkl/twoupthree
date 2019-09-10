@@ -191,9 +191,10 @@ overflow: hidden;margin-top: 15px;transition: all 0.2s linear 0s;}
     color: #FF6900;margin-top: 7px;transition: all 0.2s linear 0s;} 
 #main .main-t .main-t-fenlei dl dd .box ul li .smallb p.price span{font: 400 12px/25px "Microsoft YaHei";
     color: #686C69;text-decoration: line-through;}
-#main .main-t .main-t-fenlei dl dd .box ul li .smallb p.btn{position: absolute;top: 260px;left: 0px;transition: all 0.2s linear 0s;}
-#main .main-t .main-t-fenlei dl dd .box ul li .smallb p.btn a{background: url(../img/css6.png) no-repeat;
-    width: 168px;height: 33px;display: block; background-position: center 0px;}
+#main .main-t .main-t-fenlei dl dd .box ul li .smallb p.btn{position: absolute;top: 260px;left: 0px;
+    background: url(../img/css6.png) no-repeat; width: 168px;height: 33px;display: block; 
+    background-position: center 0px;}
+/* #main .main-t .main-t-fenlei dl dd .box ul li .smallb p.btn a{} */
     #main .main-t .main-t-fenlei dl dd .box ul li:hover .smallb{transform:scale(.8)}
 /* #main .main-t .main-t-fenlei dl dd .box ul li:hover p.btn{} */
 

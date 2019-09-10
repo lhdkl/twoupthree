@@ -21,8 +21,9 @@
                 </div>
                 <div class="tel">
                     <p>手机</p>
-                    <input type="text" id="txt1" value="请输入邮箱/手机号">
+                    <input type="tel" id="txt1" value="请输入手机号">
                     <s></s>
+                    <div class="telerro">手机号码格式不正确，请重新输入</div>
                 </div>
                 <div class="register-yz">
                     <p>验证</p>
@@ -35,20 +36,22 @@
                     <p>密码</p>
                     <input type="text" id="txt2">
                     <s></s>
+                    <div class="passerro">密码须为8-16位字母,数字,下划线组合</div>
                 </div>
                 <div class="repass">
                         <p>确认密码</p>
                         <input type="text" id="txt2">
                         <s></s>
+                        <div class="repasserro">请输入确认密码</div>
                 </div>
                 <div class="choose">
-                    <input type="checkbox" checked="checked" id="check"></input>
+                    <input type="checkbox"  id="check" />
                     我已阅读并同意<a href="#">《本来生活网用户协议》</a>以及<a href="#">《隐私政策》</a>
                 </div>
-               <input type="button" value="立即登录" id="btn">
+                <div class="submit"><a href="#">立即注册</a></div>
                <div class="other">
                     已注册
-                    <a href="#">立即注册</a>
+                    <a href="./land.html">立即登陆</a>
                </div>
                <dl>
                    <dt>其他方式</dt>
@@ -74,5 +77,9 @@
         // $("#land-footer").load("./index.html #footer");
     
     </script> -->
+    <script src="../libs/jquery.js"></script>
+    <script src="../js/ajax.2.0.js"></script>
+    <script src="../js/register.js"></script>
+   
 </body>
 </html>

@@ -12,6 +12,7 @@
     margin-right: 10px;}
 #land .land-b .land-b-l .tel #txt1{border:none;font: 400 14px/28px "Microsoft YaHei";width: 240px;
     height: 28px;}
+#land .land-b .land-b-l .tel .telerro{display:none;position: absolute;top: -30px; left: 0px;line-height: 30px;color: #FF6900;} 
 #land .land-b .land-b-l  .register-yz{float: left; width: 400px;margin:-15px 0 30px 30px;}
 #land .land-b .land-b-l  .register-yz p{float: left;width: 88px;text-align: center;border: 1px solid #DDD;
     font: 400 14px/42px "Microsoft YaHei";}
@@ -34,7 +35,7 @@
     font: 400 14px/28px "Microsoft YaHei";margin-right: 10px;}
 #land .land-b .land-b-l .pass #txt2{font: 400 14px/28px "Microsoft YaHei";width: 240px;height: 28px;
     border: 0px none;}
-
+#land .land-b .land-b-l .pass .passerro{display:none; position: absolute;top: -30px;left: 0px;line-height: 30px;color: #FF6900;}
 #land .land-b .land-b-l .repass{float: left;width: 398px;border: 1px solid #DDD;margin-bottom: 30px;
         padding: 7px 0px; position: relative;margin-left:30px;}
     
@@ -42,12 +43,12 @@
         font: 400 14px/28px "Microsoft YaHei";margin-right: 10px;}
 #land .land-b .land-b-l .repass #txt2{font: 400 14px/28px "Microsoft YaHei";width: 240px;height: 28px;
         border: 0px none;}
-
+#land .land-b .land-b-l .repass .repasserro{display:none;position: absolute;top: -30px;left: 0px; line-height: 30px; color: #FF6900;}
 #land .land-b .land-b-l .choose{float:left;font: 400 14px/20px "Microsoft YaHei";width: 100%;
     margin-bottom: 20px;position: relative;margin-left:30px;}
 #land .land-b .land-b-l .choose #check{float: left;margin: 4px 8px 0px 0px;}
 #land .land-b .land-b-l .choose a{color: #8AB700;margin-left: 5px;}
-#land .land-b .land-b-l #btn{float: left;width:400px;text-align: center;font: 400 24px/58px "Microsoft YaHei";
+#land .land-b .land-b-l .submit a{float: left;width:400px;text-align: center;font: 400 24px/58px "Microsoft YaHei";
     color: #FFF;background-color: #BBB;;border:none;display: block;margin-left:30px;}
 #land .land-b .land-b-l .other{float: left;width: 100%;text-align: right;font: 400 14px/35px "Microsoft YaHei";
     padding-bottom: 25px;} 

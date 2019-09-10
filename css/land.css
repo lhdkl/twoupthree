@@ -27,8 +27,8 @@
     margin-bottom: 20px;position: relative;margin-left:30px;}
 #land .land-b .land-b-l .choose #check{float: left;margin: 4px 8px 0px 0px;}
 #land .land-b .land-b-l .choose a{color: #8AB700;margin-left: 5px;}
-#land .land-b .land-b-l #btn{float: left;width:400px;text-align: center;font: 400 24px/58px "Microsoft YaHei";
-    color: #FFF;background-color: #FF6900;border:none;display: block;margin-left:30px;}
+#land .land-b .land-b-l .submit a{float: left;width:400px;text-align: center;font: 400 24px/58px "Microsoft YaHei";
+    color: #FFF;background-color:#FF6900;;border:none;display: block;margin-left:30px;}
 #land .land-b .land-b-l .other{float: left;width: 100%;text-align: right;font: 400 14px/35px "Microsoft YaHei";
     padding-bottom: 25px;} 
 #land .land-b .land-b-l .other a{color: #8AB700;margin:0 30px 0 5px;}
