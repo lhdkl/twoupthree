@@ -258,7 +258,8 @@ overflow: hidden;margin-top: 15px;transition: all 0.2s linear 0s;}
 #footer .footer-b dl .bott em.jiand{display:block;float:left;}
 #footer .footer-b dl .bott em.jiand a{display: block;height:35px;width:130px;background:url(../img/yfu.png) no-repeat;}
 
-
+ul.floor{height:100px;position:fixed;top:300px;right:0;}
+ul.floor li{margin-top:2px;height:40px;background:#90B42F;width:60px;right:10px;text-align: center;font:20px/40px ""; color:#fff;}
 
 
 

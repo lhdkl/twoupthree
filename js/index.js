@@ -16,11 +16,12 @@
             this.listul=document.querySelector("#nav .margin .nav-l .shuig ul")
             this.url="http://localhost/twoupthree/json/goods.json";
             this.listurl="http://localhost/twoupthree/json/item.json";
-            this.getLocal();
-            this.logins();
+            
             this.listload();
             this.onload();
             this.addEvent();
+            // this.getLocal();
+            // this.logins();
         }
         getLocal(){
             this.account= JSON.parse(localStorage.getItem("account")) || [];
@@ -159,7 +160,7 @@
             ajax({
                 url:this.url,
                 success:function(res){
-                    // console.log(res);
+                    console.log(res);
                     that.res=JSON.parse(res);
                     that.display();
                 }
@@ -173,7 +174,7 @@
                         <div class="smallb">
                             <p class="simg"> 
                                 <a  href="layout.html">
-                                    <img src="${res[i].img}" class="img">
+                                    <img src="${res[i].imga}" class="img">
                                 </a>
                             </p>
                             <P class="tip">

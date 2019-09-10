@@ -3,7 +3,10 @@
     "tip":"椰汁清甜沁心 椰肉香软滑嫩 ",
     "price":"89",
     "oldprice":"188",
-    "img":"../img/yq.jpg",
+    "imga":"../img/yq.jpg",
+    "imgb":"../img/yqx1.jpg",
+    "imgc":"../img/yqx2.jpg",
+    "imgd":"../img/yqx3.jpg",
     "img1":"../img/yq1.jpg",
     "img2":"../img/yq2.jpg",
     "img3":"../img/yq3.jpg",
@@ -18,7 +21,7 @@
         "tip":"真佳沛，在本来  ",
         "price":"219",
         "oldprice":"339",
-        "img":"../img/qig.jpg",
+        "imga":"../img/qig.jpg",
         "goodsId":"123456781",
         "goodty":"奇异果"
     },
@@ -26,7 +29,7 @@
         "tip":" ",
         "price":"219",
         "oldprice":"339",
-        "img":"../img/sl.jpg",
+        "imga":"../img/sl.jpg",
         "goodsId":"123456782",
         "goodty":"石榴"
         },
@@ -34,7 +37,7 @@
         "tip":"每天一个营养果  ",
         "price":"99",
         "oldprice":"169",
-        "img":"../img/nyg.jpg",
+        "imga":"../img/nyg.jpg",
         "goodsId":"123456783",
         "goodty":"牛油果"
         },
@@ -42,7 +45,7 @@
         "tip":"香甜多汁 美味可口",
         "price":"138",
         "oldprice":" ",
-        "img":"../img/hmg.jpg",
+        "imga":"../img/hmg.jpg",
         "goodsId":"123456784",
         "goodty":"哈密瓜"
         },
@@ -50,7 +53,7 @@
         "tip":"又名：阳光玫瑰，被阳光亲吻过的葡萄，清新甜蜜有如初恋",
         "price":"49",
         "oldprice":"128",
-        "img":"../img/qt.jpg",
+        "imga":"../img/qt.jpg",
         "goodsId":"123456785",
         "goodty":"青提"
         },
@@ -58,7 +61,7 @@
         "tip":"花青素满满  ",
         "price":"40",
         "oldprice":"90",
-        "img":"../img/hlg.jpg",
+        "imga":"../img/hlg.jpg",
         "goodsId":"123456786",
         "goodty":"火龙果"
         },
@@ -66,7 +69,7 @@
         "tip":"",
         "price":"30",
         "oldprice":"79",
-        "img":"../img/pg1.jpg",
+        "imga":"../img/pg1.jpg",
         "goodsId":"123456787",
         "goodty":"苹果"
         },
@@ -74,7 +77,7 @@
         "tip":" ",
         "price":"258",
         "oldprice":"328",
-        "img":"../img/liulian.jpg",
+        "imga":"../img/liulian.jpg",
         "goodsId":"123456788",
         "goodty":"榴莲"
         },
@@ -82,7 +85,7 @@
         "tip":"",
         "price":"69",
         "oldprice":"126",
-        "img":"../img/pigu2.jpg",
+        "imga":"../img/pigu2.jpg",
         "goodsId":"123456789",
         "goodty":"苹果"
         }

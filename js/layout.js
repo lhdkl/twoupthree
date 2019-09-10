@@ -17,19 +17,15 @@
                     console.log(that.res);
                     that.layoutgetLocal();
                 }
-
             });
         }
         layoutgetLocal(){
             this.layouts = localStorage.getItem("layouts") ? JSON.parse(localStorage.getItem("layouts")):[];
             this.display()
-           
-
         }
         display(){
             var str="";
             var res=this.res;
-
             for(var i=0;i<res.length;i++){
                 if(this.res[i].goodsId == this.layouts[this.layouts.length-1].id){
                     str+=`
@@ -42,9 +38,9 @@
                             <!--大图区域-->
                             <div class="exzoom_img_box" >
                                 <ul class='exzoom_img_ul'>
-                                    <li><img src="${this.res[i].img}"/></li>
-                                    <li><img src="${this.res[i].img}"/></li>
-                                    <li><img src="${this.res[i].img}"/></li>
+                                    <li><img src="${this.res[i].imga}"/></li>
+                                    <li><img src="${this.res[i].imgb}"/></li>
+                                    <li><img src="${this.res[i].imgc}"/></li>
                                 </ul>
                             </div>
                             <!--缩略图导航-->
