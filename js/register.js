@@ -15,9 +15,8 @@
             this.ochIn=document.querySelector(".land-b .land-b-l .choose input");
             this.sub=document.querySelector(".land-b .land-b-l .submit")
             this.suba=document.querySelector(".land-b .land-b-l .submit a")
-           
             this.cout=0;
-            this.onoff="ture";
+            this.onoff=true;
             this.addEvent();
             //  console.log(this.oPass);
         }
@@ -76,13 +75,13 @@
                
         }
         pand(){
-            if(this.onoff="ture"){
+            if(this.onoff){
                 this.suba.style.background="#FF6900";
-                this.onoff="false";
+                this.onoff=false;
                this.cout+=1;
             }else{
                 this.suba.style.background="#BBB";
-                this.onoff="ture";}
+                this.onoff=true;}
                 console.log(this.onoff);
         }
       load(){
@@ -108,7 +107,7 @@
        this.obj = {username:this.username,password:this.password}
        this.account.push(this.obj);
        localStorage.setItem("account",JSON.stringify(this.account))
-        alert("用户创建成功");
+        this.suba.href="index.html"
       } 
       
     }

@@ -15,7 +15,6 @@
         }
         addEvent(){
             var that=this;
-            console.log(1)
             this.Obox.addEventListener("click",function(eve){
                 var e=eve || window.event;
                 var target = e.target || e.srcElement;
@@ -24,12 +23,26 @@
                     console.log(that.id)
                     that.setLocal();
                 }
+                // console.log(target)
+                if(target.className == "img" ||target.className == "font"||target.className == "span"){
+                    that.id=target.parentNode.parentNode.parentNode.parentNode.getAttribute("index");
+                    // console.log(that.id)
+                    that.layoutSetLoca()
+                }
                 
             })
 
         }
+        layoutSetLoca(){
+            this.layouts=JSON.parse(localStorage.getItem("layouts")) || [];
+            
+                this.layouts.push({
+                    id:this.id
+                })
+            localStorage.setItem("layouts",JSON.stringify(this.layouts))
+        }
         setLocal(){
-            console.log(this.id);
+            // console.log(this.id);
             // 把数据存在数组中，先读本地缓存，看看里面有没有数据，判断第一次读还是不是第一次读
             this.cargo=JSON.parse(localStorage.getItem("cargo")) || [];
             if(this.cargo.length<1){
@@ -120,20 +133,25 @@
             var res=this.res;
             for(var i=0;i<res.length;i++){
                 str+=`<li index="${res[i].goodsId}">
-                <div class="smallb">
-                    <p> 
-                        <a href="../html/layout.html">
-                            <img src="${res[i].img}">
-                        </a>
-                    </p>
-                    <P class="tip"><a href="../html/layout.html"><font>${res[i].name}</font><span>${res[i].tip}</span></a></P>
-                    <p class="price">
-                        ￥${res[i].price}
-                        <span>￥${res[i].oldprice}</span>
-                    </p>
-                    <p class="btn"></p>
-                </div>
-            </li>`
+                        <div class="smallb">
+                            <p class="simg"> 
+                                <a  href="layout.html">
+                                    <img src="${res[i].img}" class="img">
+                                </a>
+                            </p>
+                            <P class="tip">
+                                <a href="layout.html">
+                                    <font class="font">${res[i].name}</font>
+                                    <span class="span">${res[i].tip}</span>
+                                    </a>
+                            </P>
+                            <p class="price">
+                                ￥${res[i].price}
+                                <span>￥${res[i].oldprice}</span>
+                            </p>
+                            <p class="btn"></p>
+                        </div>
+                    </li>`
             }
             this.Oul.innerHTML=str;
             // console.log(str)

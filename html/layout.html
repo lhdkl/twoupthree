@@ -7,23 +7,366 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/public.css" >
     <link rel="stylesheet" href="../css/layout.css" >
+    <link rel="stylesheet" href="../libs/normalize.css">
+    <link rel="stylesheet" href="../libs/jquery.exzoom.css">
 </head>
 <body>
+    <div id="header-view" >
+            <div class="header-top" >
+                <div class="margin">
+                    <div class="header-top-l">你好，请
+                        <a href="./land.html">[登录]</a>
+                        <a href="./register.html">[注册]</a>
+                        <a href="#">[机构会员]</a>
+                    </div>
+                    <div class="header-top-c">
+                        <a href="#">送至: <font id=addre>上海</font></a>
+                    </div>
+                    <div class="header-top-r">
+                        <ul>
+                            <li>
+                                <s></s>
+                                <div class="menu my">
+                                    <a href="#">
+                                        我的订单
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu lip">
+                                    <a href="#">
+                                        本来礼品
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hand">
+                                    <dl>
+                                        <dt><a href="#">掌上未来</a></dt>
+                                        <dd>
+                                            <img src="../img/ewm.png" />
+                                            <p>扫描下载客户端</p>
+                                        </dd>
+                                    </dl>
+    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="server">
+                                    <dl>
+                                        <dt><a href="#">客户服务</a></dt>
+                                        <dd>
+                                            <p><a href="#">在线服务</a></p>
+                                            <p><a href="#">联系客服</a></p>
+                                            <p><a href="#">销售热线</a></p>
+                                            <p><a href="#">帮助中心</a></p>
+                                        </dd>
+                                    </dl> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+        </div>
+        <div id=logo>
+            <div class="margin">
+                <div class="logo-l">
+                    <a href="#"><img src="../img/logo.gif"/></a>
+                </div>
+                <div class="logo-c">
+                    <ul>
+                        <li><a href="#">大闸蟹</a></li>
+                        <li><a href="#">本来月饼</a></li>
+                        <li><a href="#">新西兰苹果</a></li>
+                        <li><a href="#">葡萄</a></li>
+                        <li><a href="#">椰青</a</li>
+                        <li><a href="#">李玉双有机稻花香</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" value="新西兰kanzi苹果49.9元12个" class="txt"/><input type="button" class="btn">
+                    </div>
+                </div>
+                <div class="logo-r">
+                    <div class="logo-r-my">
+                        <dl>
+                            <dt>                               
+                                <a href="#"><s></s>我的本来</a>
+                            </dt>
+                            <dd>
+                                <div class="logo-r-my-mx">
+                                    <div>
+                                            你好，请
+                                        <a href="./land.html">[登录]</a>
+                                    </div>
+                                </div>
+                            </dd>
+                    </dl>
+                    </div>
+                    <div class="logo-r-car">
+                        <div class="num">num</div>
+                        <a href="car.html">
+                            <s></s>
+                            购物车
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="margin">
+                <div class="nav-l">
+                    <div class="nav-l-t"><a href="#">所有商品分类</a></div>
+                    <div class="nav-l-b">
+                        <dl class="shuig">
+                            <dt><a href="#">水果</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <ul>
+                                        <!-- <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="">奇异果</a></em>
+                                                <em><a href="#" title="">奇异果</a></em>
+                                                <em><a href="#" title="">奇异果</a></em>
+                                                <em><a href="#" title="">奇异果</a></em>
+                                            </div>
+                                        </li> -->
+
+                                    </ul>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="zdzb">
+                            <dt><a href="#">镇店之宝</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="sc">
+                            <dt><a href="#">蔬菜</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="rqdl">
+                            <dt><a href="#">肉禽蛋类</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="schx">
+                            <dt><a href="#">水产海鲜</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="ssml">
+                            <dt><a href="#">熟食面类</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="lyfs">
+                            <dt><a href="#">粮油副食</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="rphb">
+                            <dt><a href="#">乳品烘焙</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="xxsp">
+                            <dt><a href="#">休闲食品</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="jscy">
+                            <dt><a href="#">酒水茶饮</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="cfyp">
+                            <dt><a href="#">厨房用品</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <!-- <ul>
+                                        <li>
+                                            <div class="title"><a href="#">热门推荐</a></div>
+                                            <div class="list">
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                                <em><a href="#" title="奇异果"></a></em>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="lplh">
+                            <dt><a href="#">礼品礼盒</a></dt>
+                            <dd>
+                                <div class="menu">
+                                    <ul>
+
+                                    </ul>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <ul class="nav-r">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">本来扶贫</a></li>
+                    <li><a href="#">台湾特产</a></li>
+                    <li><a href="#">台创园</a></li>
+                    <li><a href="#">韩国馆</a></li>
+                    <li><a href="#">充值</a></li>
+                    <li><a href="#">全国配</a></li>
+                    <li><a href="#">本来礼品</a></li>
+                    <li><a href="#">兑奖专区</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
     <div id="layout" class="margin">
         <div class="layout-t">
             <a href="#">首页</a> > <span class="layout-name">椰青</span>
         </div>
         <div class="goods">
             <div class="goods-xx">
-                <div class="goods-xx-t">
-                    <dl>
-                        <dt><a href="#" class="up"></a></dt>
-                        <dd id="smallgoods">
-                            <a href="#"></a>
-                        </dd>
-                        <dt><a href="#" class="down"></a></dt>
-                    </dl>
-                    <div class="goods-xx-r"></div>
+                <div class="exzoom" id="exzoom">
+                    <!--大图区域-->
+                    <div class="exzoom_img_box" >
+                        <ul class='exzoom_img_ul'>
+                            <li><img src="../img/yqx1.jpg"/></li>
+                            <li><img src="../img/yqx2.jpg"/></li>
+                            <li><img src="../img/yqx3.jpg"/></li>
+                            <li><img src="../img/yqx4.jpg"/></li>
+                            <li><img src="../img/yqx1.jpg"/></li>
+                        </ul>
+                    </div>
+                    <!--缩略图导航-->
+                    <div class="exzoom_nav"></div>
+                    <!--控制按钮-->
+                    <p class="exzoom_btn">
+                        <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a>
+                        <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a>
+                    </p>
                 </div>
                 <div class="goods-xx-b">
                     <div class="num">商品编码：<span class="goodsId">123456789</span></div>
@@ -125,5 +468,130 @@
             </div>
         </div>
     </div>
+    <div id="footer">
+            <div class="footer-t">
+                <div class="margin">
+                    <dl>
+                        <dt class="l1"></dt>
+                        <dd>
+                            <span>18小时低温</span>
+                            全程冷链配送
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="l2"></dt>
+                        <dd>
+                            <span>0时差基地直供</span>                     
+                            农田到餐桌 
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="l3"></dt>
+                        <dd>
+                            <span>48项检测</span>
+                            安全无农残
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="l4"></dt>
+                        <dd>
+                            <span>7*24小时营业</span>
+                            全年无休
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="footer-c">
+                <dl>
+                    <dt class="new">新手指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员政策</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                    <dd><a href="#">积分政策</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                </dl>
+                <dl>
+                    <dt class="peis">配送方式</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员政策</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                    <dd><a href="#">积分政策</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                </dl>
+                <dl>
+                    <dt class="zhif">支付方式</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员政策</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                    <dd><a href="#">积分政策</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                </dl>
+                <dl>
+                    <dt class="shouh">售后服务</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员政策</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                    <dd><a href="#">积分政策</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                </dl>
+            </div>
+            <div class="footer-b margin">
+                <dl>
+                    <dt>
+                        <img src="../img/tel.gif">
+                        客服热线：4006-917-917（周一至周日 8:00-20:00）
+                    </dt>
+                    <dd>
+                        <em><a href="#">加入我们</a></em>
+                        <em><a href="#">联系我们</a></em>
+                        <em><a href="#">关于我们</a></em>
+                        <em><a href="#">友情链接</a></em>
+                        <em><a href="#">品牌食材</a></em>
+                        <em><a href="#">食品经营许可证</a></em>
+                        <em><a href="#">营业执照</a></em>
+                        <em class="none"><a href="#">广播电视节目制作经验许可证</a></em>
+                    </dd>
+                    <dd>
+                        <em>
+                            <a href="#">
+                                <img src="../img/police.png">
+                                京公网安备 1111111111号
+                            </a>
+                        </em>
+                        <em>
+                            <a href="#">
+                            哈哈哈哈哈哈哈哈：哈哈哈哈哈哈哈
+                            </a>
+                        </em>
+                        <em>
+                            <a href="#">
+                            哈哈哈哈哈哈哈哈：哈哈哈哈哈哈哈
+                            </a>
+                        </em>
+                        <em class="none">
+                            <a href="#">
+                            哈哈哈哈哈哈哈哈：哈哈哈哈哈哈哈
+                            </a>
+                        </em>
+                    </dd>
+                    <dd>© 2012-2019 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司</dd>
+                    <dd class="bott">
+                        <em class="wangz none"><a href="#"></a></em>
+                        <em class="jiand none"><a href="#"></a></em>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <script src="../libs/jquery.js"></script>
+        <script src="../libs/jquery.exzoom.js"></script>
+    	<script type="text/javascript">
+	    $("#exzoom").exzoom({
+	        autoPlay: false,
+        });//方法调用，务必在加载完后执行
+        </script>
+        <script src="../js/ajax.2.0.js"></script>
+        <script src="../js/layout.js"></script>
+      
+
 </body>
 </html>

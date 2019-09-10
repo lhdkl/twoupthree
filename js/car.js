@@ -3,10 +3,12 @@
     class Car{
         constructor(){
             this.carUl=document.querySelector(".car-content-m-c ul");
-            this.oBox=document.querySelector(".car-content-m-c")
+            this.oBox=document.querySelector(".car-content-m-c");
+            this.oinput=document.querySelector(".car-content-m-c ul input")
             this.url="http://localhost/twoupthree/json/goods.json";
-            this.load()
+            this.load();
             this.addEvent();
+           
         }
         addEvent(){
             var that=this;
@@ -26,7 +28,7 @@
                 var target=e.target || e.srcElement;
                 if(target.className=="caozuo"){
                    that.id=target.parentNode.getAttribute("index");
-                //    console.log(that.id)
+                   console.log(that.id)
                     that.deletLocal()
                 }
             }) 
@@ -75,6 +77,7 @@
         }
         display(){
             var str="";
+
             for(var i=0;i<this.res.length;i++){
                 for(var j=0;j<this.cargo.length;j++){
                     if(this.res[i].goodsId==this.cargo[j].id){

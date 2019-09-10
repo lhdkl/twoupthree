@@ -34,7 +34,12 @@
                             <img src="${res[i].img}"/>
                         </a>
                     </p>  
-                    <P class="tip"><a href="../html/layout.html"><font>${res[i].name}</font><span>${res[i].tip}</span></a></P>
+                    <P class="tip">
+                         <a href="../html/layout.html">
+                        <font>${res[i].name}</font>
+                        <span>${res[i].tip}</span>
+                        </a>
+                    </P>
                     <p class="price">
                         ￥${res[i].price}
                         <span>￥${res[i].oldprice}</span>
