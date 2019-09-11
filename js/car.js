@@ -4,11 +4,32 @@
         constructor(){
             this.carUl=document.querySelector(".car-content-m-c ul");
             this.oBox=document.querySelector(".car-content-m-c");
-            this.oinput=document.querySelector(".car-content-m-c ul input")
+            this.oinput=document.querySelector(".car-content-m-c ul input");
+            this.of2=document.querySelector(".header-top .header-top-login dd .f2");
             this.url="http://localhost/twoupthree/json/goods.json";
             this.load();
+            // this.getLocal();
+            // this.logins();
             this.addEvent();
            
+        }
+        getLocal(){
+            this.account= JSON.parse(localStorage.getItem("account")) || [];
+            // console.log(this.account);
+            
+        }
+        logins(){
+            console.log(this.account)
+           this.i=0;
+           var on=this.account.some((val,index)=>{
+                this.i=index;
+                return val.onoff==1;
+           })
+           if(on){
+            this.em.innerHTML=this.account[this.i].username;
+            this.dp.innerHTML=this.account[this.i].username;
+           }
+
         }
         addEvent(){
             var that=this;
@@ -71,13 +92,14 @@
                 // console.log(this.id)  
                 if( this.id == this.cargo[i].id){
                     this.cargo[i].num = this.value; 
-                }        
+                } 
+                    
             }
             localStorage.setItem("cargo",JSON.stringify(this.cargo));
+            this.display();   
         }
         display(){
             var str="";
-
             for(var i=0;i<this.res.length;i++){
                 for(var j=0;j<this.cargo.length;j++){
                     if(this.res[i].goodsId==this.cargo[j].id){

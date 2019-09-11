@@ -92,7 +92,7 @@
       }
     setlocal(){
         this.account=JSON.parse(localStorage.getItem("account")) || [];
-        console.log(this.account)
+        // console.log(this.account)
         this.username = this.oInput.value;
         this.password = this.opInput.value;
         //遍历数组进行匹配
@@ -106,10 +106,9 @@
         //创建对象
        this.obj = {username:this.username,password:this.password,onoff:0}
        this.account.push(this.obj);
-        // location.href="index.html";
-
        localStorage.setItem("account",JSON.stringify(this.account))
-        // this.suba.href="index.html"
+       location.href="land.html";
+      
       } 
       
     }

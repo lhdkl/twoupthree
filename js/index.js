@@ -9,24 +9,22 @@
             this.em=document.querySelector(".header-top .header-top-login .f1 em");
             this.dp=document.querySelector(".header-top .header-top-login dd p");
             this.of2=document.querySelector(".header-top .header-top-login dd .f2");
-            console.log(this.em)
-            console.log(this.login)
-            // console.log(this.Obox);
-            // console.log(this.Oul);
+            this.oa=document.querySelector(".logo-r .logo-r-car a")
+            this.ovalue=document.querySelector(".logo-c .search .txt");
+            this.btn=document.querySelector(".logo-c .search .btn");
+            // console.log( this.ovalue);
             this.listul=document.querySelector("#nav .margin .nav-l .shuig ul")
             this.url="http://localhost/twoupthree/json/goods.json";
             this.listurl="http://localhost/twoupthree/json/item.json";
-            
             this.listload();
             this.onload();
+            this.getLocal();
+            this.logins();
             this.addEvent();
-            // this.getLocal();
-            // this.logins();
         }
         getLocal(){
             this.account= JSON.parse(localStorage.getItem("account")) || [];
-            console.log(this.account);
-            
+            // console.log(this.account);    
         }
         logins(){
            this.i=0;
@@ -39,9 +37,8 @@
             this.login.style.display="block";
             this.em.innerHTML=this.account[this.i].username;
             this.dp.innerHTML=this.account[this.i].username;
+            this.oa.href="car.html";
            }
-
-
         }
         addEvent(){
             var that=this;
@@ -58,18 +55,35 @@
                     that.id=target.parentNode.parentNode.parentNode.parentNode.getAttribute("index");
                     // console.log(that.id)
                     that.layoutSetLoca()
-                }
-                
+                }  
+            })
+            this.ovalue.addEventListener("focus",function(){
+                that.ovalue.value="";
+            })
+            this.btn.addEventListener("click",function(){
+                that.value=that.ovalue.value;
+                location.href="list.html";
+                that.searchsetlocal();
+
             })
             that.of2.onclick=function(){
+                console.log(that.i)
                 that.account[that.i].onoff = 0;
-                localStorage.setItem("account",JSON.stringify(this.account));
+                localStorage.setItem("account",JSON.stringify(that.account));
                 that.nologin.style.display="block";
                 that.login.style.display="none";
                 that.em.innerHTML="";
                 that.dp.innerHTML=""; 
+                that.oa.href="land.html";
             }
-
+        }
+        searchsetlocal(){
+            console.log(this.value);
+            this.code=JSON.parse(localStorage.getItem("code")) || [];
+           this.code.push({
+               key:this.value
+           });
+           localStorage.setItem("code",JSON.stringify(this.code));
         }
         layoutSetLoca(){
             this.layouts=JSON.parse(localStorage.getItem("layouts")) || [];

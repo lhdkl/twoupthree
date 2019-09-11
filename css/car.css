@@ -36,8 +36,18 @@
 .margin{width:1200px;margin:0 auto;}
 #header-view{width: 100%; color: #3E4141; }
 #header-view .header-top{ width: 100%;height:31px;background-color: #FCFCFC;border-bottom: 1px solid #E5E5E5;}
-#header-view .header-top .header-top-l{color: #3E4141;line-height: 30px;float: left;margin-right: 20px; }
-#header-view .header-top .header-top-l a{color:red;}
+#header-view .header-top .header-top-login{position: relative;float: left;margin-right: 20px;}
+#header-view .header-top .header-top-login  dl{height: 30px;}
+#header-view .header-top .header-top-login  dl dt{padding: 0px 10px 0px 7px;
+    border-left: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;border-bottom: 1px solid #E8E8E8;
+    background-color: #FFF;z-index: 73;width: 123px;height: 29px;}
+#header-view .header-top .header-top-login  dl dt a.f1{display: block;
+    background: url("../img/css1.png") no-repeat scroll 114px 13px transparent;
+    padding-right: 19px;line-height: 32px;color: #3E4141;float: left;width: 105px;height: 30px;}
+#header-view .header-top .header-top-login  dl dt a.f1 p{float: left;}
+#header-view .header-top .header-top-login  dl dt a.f1 em{color: #FF6900;width: 68px;
+    text-overflow: clip;overflow: hidden;word-wrap: break-word;height: 32px;float: right;}
+
 #header-view .header-top .header-top-c{float: left;background: url(../img/css1.png) no-repeat scroll 0px -43px transparent;
     padding-left: 34px;}
 #header-view .header-top .header-top-c a{display: block;text-align: left;width: 69px;height: 22px;line-height: 22px;
