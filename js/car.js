@@ -6,10 +6,10 @@
             this.oBox=document.querySelector(".car-content-m-c");
             this.oinput=document.querySelector(".car-content-m-c ul input");
             this.of2=document.querySelector(".header-top .header-top-login dd .f2");
+            this.allnum=document.querySelector(".car-content-b .b-l span");
+            this.allprice=document.querySelector(".car-content-b .b-r span")
             this.url="http://localhost/twoupthree/json/goods.json";
             this.load();
-            // this.getLocal();
-            // this.logins();
             this.addEvent();
            
         }
@@ -100,6 +100,8 @@
         }
         display(){
             var str="";
+           var allnum=0;
+           var allprice=0;
             for(var i=0;i<this.res.length;i++){
                 for(var j=0;j<this.cargo.length;j++){
                     if(this.res[i].goodsId==this.cargo[j].id){
@@ -114,10 +116,14 @@
                                         删除
                                     </div>
                                 </li>`
+                        allnum+=parseInt(this.cargo[j].num);
+                        allprice+=parseInt(this.cargo[j].num*this.res[i].price);
                      }
                 }
             }
             this.carUl.innerHTML=str;
+            this.allnum.innerHTML=allnum;
+            this.allprice.innerHTML=allprice
         }
     }
     new Car()

@@ -8,7 +8,7 @@
 #car .carr-content .car-content-t .mycar{font: 400 16px/35px "Microsoft YaHei"; float: left;}
 #car .car-content .car-content-t .myland{line-height: 35px; float: right;color: #666;}
 #car .car-content .car-content-t .myland a img{margin: 0px 2px;}
-/* #car .car-content .car-content-m{} */
+#car .car-content .car-content-m{overflow: hidden;}
 #car .car-content .car-content-m .car-content-m-t{width: 100%;margin: 50px 0px -3px;background-color: #FF9000;height:36px;}
 #car .car-content .car-content-m .car-content-m-t p{float: left;font-size: 14px;color: #FFF;font-weight: 700;line-height: 36px;
     padding: 0px 10px;}
@@ -34,6 +34,14 @@
     font: 400 20px/22px "Microsoft YaHei";color: #FF9000;}
 #car .car-content .car-content-m .car-content-m-c ul li .caozuo{width: 80px;float: left;line-height: 22px;}
 .margin{width:1200px;margin:0 auto;}
+
+#car .car-content .car-content-b{width: 100%;background-color: #FF9000;height:36px;
+    font:16px/36px "";color: #FFF;font-weight: 700;text-align: center;}
+#car .car-content .car-content-b .b-l{float: left;margin-left:636px;width:90px;}
+#car .car-content .car-content-b .b-r{float: left;width: 90px;}
+#car .last{float: right;font:20px/40px "";}
+#car .last a{color: #90B42F;}
+
 #header-view{width: 100%; color: #3E4141; }
 #header-view .header-top{ width: 100%;height:31px;background-color: #FCFCFC;border-bottom: 1px solid #E5E5E5;}
 #header-view .header-top .header-top-login{position: relative;float: left;margin-right: 20px;}
